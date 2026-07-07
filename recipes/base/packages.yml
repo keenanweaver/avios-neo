@@ -1,17 +1,19 @@
 modules:
-  - type: rpm-ostree
+  - type: dnf
+      repos:
+        nonfree: rpmfusion
     install:
-      - ffmpeg
-      - distrobox
-      #- virt-manager
-      - xwaylandvideobridge
-      - ccid
-      # CAC
-      - firefox
-      - opensc
-      - pcsc-tools
+      allow-erasing: true
+      packages:
+        - ffmpeg
+        - distrobox
+        - virt-manager
+        - xwaylandvideobridge
+        - ccid
+        - firefox
+        - opensc
+        - pcsc-tools
 
   - type: bling
     install:
-       - negativo17
        - 1password
