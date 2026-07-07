@@ -1,0 +1,22 @@
+modules:
+  - type: default-flatpaks
+    configurations:
+      - scope: user
+        repo:
+          # you can override the title to make inclusion of both system and user repos clearer
+          title: Flathub (user)
+      - notify: true
+        scope: system
+        repo:
+          title: Flathub (system)
+        install: # system flatpaks we want all users to have and not remove
+          - com.slack.Slack
+          - com.github.IsmaelMartinez.teams_for_linux
+          - com.google.Chrome
+          - com.jgraph.drawio.desktop
+          - com.microsoft.Edge
+          - org.kde.haruna
+          #- org.mozilla.firefox
+          - org.mozilla.Thunderbird
+          - org.onlyoffice.desktopeditors
+          - us.zoom.Zoom

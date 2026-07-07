@@ -1,0 +1,17 @@
+modules:
+  - type: rpm-ostree
+    install:
+      - ffmpeg
+      - distrobox
+      #- virt-manager
+      - xwaylandvideobridge
+      - ccid
+      # CAC
+      - firefox
+      - opensc
+      - pcsc-tools
+
+  - type: bling
+    install:
+       - negativo17
+       - 1password
