@@ -4,6 +4,6 @@ modules:
       nerd-fonts:
         - JetBrainsMono
 
-  - type: rpm-ostree
+  - type: dnf
     install:
       - rsms-inter-fonts
