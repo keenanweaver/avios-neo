@@ -10,6 +10,7 @@ modules:
         repo:
           title: Flathub (system)
         install: # system flatpaks we want all users to have and not remove
+          - com.onepassword.OnePassword
           - com.slack.Slack
           - com.github.IsmaelMartinez.teams_for_linux
           - com.google.Chrome
